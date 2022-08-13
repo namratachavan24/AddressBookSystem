@@ -14,10 +14,12 @@ namespace AddressBookSystemDay9
         {
             this.ContactList = new List<Contact>();
         }
+        //Add
         public void AddContact(Contact contactObj)
         {
             this.ContactList.Add(contactObj);
         }
+        //Edit
         public int FindByPhoneNum(long phoneNumber)
         {
             return this.ContactList.FindIndex(contact => contact.PhoneNumber.Equals(phoneNumber));
